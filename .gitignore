@@ -1,16 +1,31 @@
+*.pdf
+
 #ignore compiled handlebars
-release
 compiled_handlebars.js
 *.handlebars.js
+#ignore generated folders
+release/
+dist
+couchapp_dev/_attachments
+couchapp_minified/views
+couchapp_minified/lists
+couchapp_minified/_attachments
+dist/
+
+spreadsheet_build_dev
 
 #ignore private config files
 *_production*
+*private*
+*mcgill*
 
-# Ignore natural lib 
+# Ignore natural lib
 public/libs/natural/
 
 .wav
 audio_stimuli
+
+TEST*.xml
 
 .idea
 .project
@@ -21,14 +36,36 @@ proguard.cfg
 node_modules
 bin
 gen
+docs/javascript
+fielddb.js
+fielddb.min.js
 
+# Node #
+########
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
 
+pids
+logs
+results
+
+bower_components
+node_modules
+npm-debug.log
 
 # LaTeX output #
 ################
 *.dvi
 *.log
 *.aux
+*.dot
+*.bak
 *.toc
 *.bbl
 *.blg
@@ -41,6 +78,10 @@ gen
 *.ist
 *.ps
 *(busy)
+*.pdfsync
+*.vrb
+*.snm
+*.nav
 
 # Compiled source #
 ###################

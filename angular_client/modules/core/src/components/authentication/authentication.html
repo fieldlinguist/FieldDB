@@ -1,0 +1,21 @@
+<form class="navbar-form navbar-right" role="login">
+  <div class="form-group" ng-hide="application.authentication.user.authenticated" >
+    <input type="text" placeholder="Username" class="form-control" ng-model="loginDetails.username" name="username" value="" tabindex="1"/>
+    &nbsp;
+    <input type="password" placeholder="Password" class="form-control" ng-model="loginDetails.password" name="password" tabindex="2"/>
+    &nbsp;
+    <button type="submit" class="btn btn-default" ng-click="login(loginDetails)" tabindex="3">
+      Login
+    </button>
+  </div>
+  <div ng-show="application.authentication.error">
+    {{application.authentication.error}}
+  </div>
+  <span class="form-group" ng-show="application.authentication.user.authenticated" >
+
+    <button class="btn btn-default" ng-click="logout()" tabindex="3">
+      Logout
+    </button>
+    <span data-fielddb-locales></span>
+  </span>
+</form>

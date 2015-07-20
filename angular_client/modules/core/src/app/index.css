@@ -1,0 +1,296 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+}
+
+.thumbnail img.pull-right {
+  width: 50px;
+}
+
+/* https://proto.io/freebies/onoff/  */
+.debugging-switch {
+    position: relative; width: 82px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.debugging-switch-checkbox {
+    display: none;
+}
+.debugging-switch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.debugging-switch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+.debugging-switch-inner:before, .debugging-switch-inner:after {
+    display: block; float: left; width: 50%; height: 18px; padding: 0; line-height: 18px;
+    font-size: 10px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+.debugging-switch-inner:before {
+    content: "Debugging";
+    padding-left: 5px;
+    background-color: #C2C2C2; color: #FFFFFF;
+}
+.debugging-switch-inner:after {
+    content: "Debug";
+    padding-right: 5px;
+    background-color: #C2C2C2; color: #FFFFFF;
+    text-align: right;
+}
+.debugging-switch-switch {
+    display: block; width: 13px; margin: 2.5px;
+    background: #A1A1A1;
+    border: 2px solid #999999; border-radius: 20px;
+    position: absolute; top: 0; bottom: 0; right: 60px;
+    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+}
+.debugging-switch-checkbox:checked + .debugging-switch-label .debugging-switch-inner {
+    margin-left: 0;
+}
+.debugging-switch-checkbox:checked + .debugging-switch-label .debugging-switch-switch {
+    right: 0px; 
+    background-color: #27A1CA; 
+}
+
+/* FieldDB styles */
+
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 999px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
+}
+
+.gravatar-small {
+  height: 2em;
+}
+
+.gravatar-medium {
+  height: 4em;
+}
+
+.gravatar-large {
+  height: 8em;
+}
+
+.copyright, .terms, .license{
+  opacity: .5;
+}
+
+.interlinear-gloss-tuple {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align: top;
+  /* necessary for when utteranceArray/morphemeArray/glossArray have different lengths */
+}
+
+.fielddb-large-textarea {
+  width: 100%;
+  height: 15em;
+}
+
+.halfopacity {
+  opacity: 0.5;
+}
+
+.drop-zone {
+  border: dashed;
+  border-color: #1E90FF;
+}
+
+.drop-zone-can-drop-now {
+  border-color: #000;
+  background: #999 !important;
+}
+
+.drop-zone-instructions-can-reorder-here:before {
+  content: 'Drop here to re-order before this item';
+  display: block;
+  color: white;
+  font-size: x-large;
+  font-weight: 800;
+}
+
+/* http://html5demos.com/drag */
+/* Prevent the text contents of draggable elements from being selectable. */
+*
+[draggable=true] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  cursor: move;
+  user-select: none;
+}
+
+.draggable-being-dragged {
+  /*background-color: rgba(238, 238, 238, 0.5);*/
+  opacity: 0.5;
+  /* padding: 1em; */
+  /*border: dashed #333 2px;*/
+  /*color: #000;*/
+}
+
+progress {
+  width: 100%;
+}
+
+.datum-tag {
+  padding: 1px 9px 2px !important;
+  -webkit-border-radius: 9px !important;
+  -moz-border-radius: 9px !important;
+  border-radius: 9px !important;
+  border-color: #3A87AD !important;
+  font-size: .85em !important;
+  font-weight: bold !important;
+  line-height: 1em !important;
+  color: white !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25) !important;
+  white-space: nowrap !important;
+  vertical-align: baseline !important;
+  background-color: #3A87AD !important;
+  text-align: center;
+}
+
+.word-wrap {
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.datum-translation {
+  font-style: italic;
+}
+
+.scrollable {
+  overflow: auto !important;
+  height: 25em !important;
+  width: 100%;
+}
+
+.ng-invalid {
+  border: 1px solid red;
+}
+
+.centered {
+  text-align: center;
+}
+
+.Spreadsheet-selectedRow {
+  background-color: #6D8CA0;
+  border: 2px solid;
+}
+
+.Spreadsheet-selectedRow input{
+  width: 100%;
+}
+
+.Spreadsheet-unselectedRow:nth-child(odd) {
+  background-color: #F1F0FF;
+}
+
+.Spreadsheet-unselectedRow {
+  background-color: #FCFCFC;
+}
+
+.Spreadsheet-unselectedNewRow {
+  background-color: #5D5E5E;
+}
+
+.Spreadsheet-unselectedGreyRow:nth-child(odd) {
+  background-color: #F1F0F1;
+}
+
+.Spreadsheet-unselectedGreyRow {
+  background-color: #FCFCFC;
+}
+
+.Spreadsheet-expandCollapseButton {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.Spreadsheet-expandedData {
+  border: 2px solid #102E37;
+  background-color: #F0F5FF;
+  min-height: 35px;
+  border-radius: 15px;
+  /*text-align: center;*/
+}
+
+.Spreadsheet-expandedDataInner {
+  padding: 10px;
+}
+
+.Spreadsheet-expandedDataComments {
+  border: 2px solid #102E37;
+  background-color: #F0F5FF;
+  min-height: 35px;
+  border-radius: 15px;
+}
+
+.Spreadsheet-expandedData form {
+  margin: 0;
+  padding: 0;
+}
+
+.glossTuple {
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 5px;
+  vertical-align: top;
+  /*necessary for when utteranceArray/morphemeArray/glossArray have different lengths*/
+}
+
+.whiteicon{
+  color: white;
+}
+
+/*
+  Allow angular.js to be loaded in body, hiding cloaked elements until
+  templates compile.  The !important is important given that there may be
+  other selectors that are more specific or come later and might alter display.
+ */
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important;
+}
+
+.description {
+  width: 100%;
+}
+
+.help-text {
+  width: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.highlight {
+  background-color: yellow;
+}

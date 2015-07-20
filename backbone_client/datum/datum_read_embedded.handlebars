@@ -1,0 +1,42 @@
+<!-- list for the fields -->
+<ul class="datum_fields_ul unstyled"></ul>
+<div>
+  <i class=" icon-save "></i><span class="last-modified">{{dateModified}}</span><br/>
+  <i class=" icon-time"></i><span class="date-created">{{dateEntered}}</span><br/>
+  <span class="session-link"></span>
+</div>
+<hr/>
+<!-- Datum Read only specialized fields and menu area -->
+<div class="row-fluid">
+  <div class="span5">
+    <!-- Buttons for various read only actions -->
+    <div class=" btn-group">
+      <a href="#" class="btn btn-mini btn-primary" title="{{locale_Show_confidential_items_Tooltip}}" rel="tooltip">
+        <i class=" {{#if decryptedMode}}icon-eye-close{{else}}icon-eye-open{{/if}}"></i>
+      </a>
+      <a  href="#" class="btn btn-mini btn-info" title="{{locale_Plain_Text_Export_Tooltip}}" rel="tooltip" >
+        <i class=" icon-paste"></i></a>
+      <a href="#" class="LaTeX btn btn-mini btn-info" title="{{locale_LaTeX}}" rel="tooltip">
+        <i>LaTeX</i>
+      </a>
+      <a href="#" class="CSV btn btn-mini btn-info" title="{{locale_CSV_Tooltip}}" rel="tooltip">
+        <i>CSV</i>
+      </a>
+    </div>
+    <br/>
+    <div class="audio_video "></div>
+    <ul class="audio_video_ul unstyled"></ul>
+  </div>
+  <div class="span4 border-left hide">
+    <!-- list for the tags -->
+    <ul class="datum_tags_ul unstyled  "></ul>
+  </div>
+  <div class="datum_state span3 border-left">
+      <span class="label label-{{datumstatecolor}} datum-primary-validation-status-color "><i class = " icon-flag"></i><span class="datum-state-value">{{datumstate}}</span></span><br/>
+  </div>
+</div>
+
+<!-- Datum comments -->
+<ul class="comments unstyled"></ul>  
+<div class="new-comment-area"></div> 
+

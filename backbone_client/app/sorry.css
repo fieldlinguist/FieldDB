@@ -1,0 +1,19 @@
+.body_background body{
+	width:580px;
+	height:300px;
+}
+table{
+	width: 100%;
+}
+td{
+	width: 50%;
+	text-align: center;
+}
+tr{
+	vertical-align: top;
+}
+
+.backup_page td {
+  width: 30%;
+  text-align: center;
+}

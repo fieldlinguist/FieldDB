@@ -1,19 +1,16 @@
 {
-  "name": "Drag and Drop FieldLinguistics Tests",
-  "version": "1.0",
-  "description": "A way for the developers to test the Drag and Drop FieldLinguistics App",
+  "name": "FieldDB Tests or Slides",
+  "version": "3.9.22",
+  "description": "A way for the developers to test the FieldDB Clients",
   "app": {
     "launch": {
-      "local_path": "./tests/jasmine.html"
+      "local_path": "tests/SpecRunner.html"
     }
   },
   "offline_enabled": true,
-  "permissions": [
-    "unlimitedStorage",
-    "<all_urls>"
-  ],
-   "icons": { 
+  "permissions" : [ "unlimitedStorage" ],
+  "manifest_version" : 2,
 
-  }
-  
+  "content_security_policy" : "default-src 'self' https://secure.gravatar.com https://docs.google.com https://themes.googleusercontent.com  https://auth.lingsync.org https://corpus.lingsync.org https://authdev.lingsync.org https://corpusdev.lingsync.org  https://localhost:6984 https://ssl.google-analytics.com "
+
 }

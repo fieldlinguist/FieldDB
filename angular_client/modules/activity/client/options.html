@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>LingSync Activity Feeds</title>
+</head>
+
+<body>
+
+	Favorite Color:
+	<select id="color">
+		<option value="red">red</option>
+		<option value="green">green</option>
+		<option value="blue">blue</option>
+		<option value="yellow">yellow</option>
+	</select>
+
+	<label> Enter the Sharable URL of the User's Activity Feed:</label>
+	<textarea class="user_or_corpus_url">https://www.lingsync.org/lingllama</textarea>
+	<label> Enter the Sharable URL of the Corpus Activity Feed:</label>
+	<textarea class="user_or_corpus_url">https://www.lingsync.org/lingllama/communitycorpus</textarea>
+
+	<button>Add Another Feed</button>
+
+	<div id="status"></div>
+	<button id="save">Save</button>
+</body>
+<!-- Google Analytics: change UA-35422317-1 to be your site's ID -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35422317-1', 'auto');
+  ga('set', 'page', 'activity-feed' + window.location.href.replace(window.location.protocol, "").replace(/^\//,""));
+  ga('send', 'pageview');
+
+</script>
+<script src="options.js"></script>
+
+</html>

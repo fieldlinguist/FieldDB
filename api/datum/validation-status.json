@@ -1,0 +1,28 @@
+[{
+    "validationStatus": "Checked*",
+    "color": "green",
+    "default": true
+  },{
+    "validationStatus": "Published*",
+    "color": "blue"
+  }, {
+    "validationStatus": "ToBeChecked*",
+    "color": "orange"
+  }, {
+    "validationStatus": "ApprovedLanguageLearningContent*",
+    "color": "green",
+    "showInLanguageLearnignApps": true
+  }, {
+    "validationStatus": "ContributedLanguageLearningContent*",
+    "color": "orange"
+  }, {
+    "validationStatus": "Deleted*",
+    "color": "red",
+    "showInSearchResults": false,
+    "showInLanguageLearnignApps": false
+  }, {
+    "validationStatus": "Duplicate*",
+    "color": "red",
+    "showInSearchResults": false,
+    "showInLanguageLearnignApps": false
+  }]

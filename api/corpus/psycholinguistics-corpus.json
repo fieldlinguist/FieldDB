@@ -1,0 +1,28 @@
+{
+  "description": "This is first database which contains the results of your experiment, you can use it to play with the app... When you want to make a real database, click New : Database/Corpus",
+  "participantFields": [ {
+    "id": "courseNumber",
+    "labelExperimenter": "Course/Class/Section Number",
+    "labelNonLinguists": "",
+    "labelTranslators": "",
+    "shouldBeEncrypted": true,
+    "encrypted": true,
+    "showToUserTypes": "all",
+    "defaultfield": true,
+    "help": "Optional course or section number, if used by the participants result reports or experimental conditions.",
+    "helpLinguists": "Optional course or section number, if used by the participants result reports or experimental conditions."
+  }, {
+    "id": "hemisphericDominance",
+    "labelExperimenter": "Hemispheric dominance (handedness)",
+    "labelNonLinguists": "",
+    "labelTranslators": "",
+    "shouldBeEncrypted": true,
+    "showToUserTypes": "all",
+    "defaultfield": true,
+    "json": {
+      "choices": ["Right", "Left", "Unknown"]
+    },
+    "help": "Optional right or left handedness or hemispheric dominante of the participant, if used by the participants result reports or experimental conditions.",
+    "helpLinguists": "Optional right or left handedness or hemispheric dominante of the participant, if used by the participants result reports or experimental conditions."
+  }]
+}

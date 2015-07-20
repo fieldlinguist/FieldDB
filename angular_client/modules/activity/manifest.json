@@ -1,0 +1,21 @@
+{
+  "name": "FieldDB Angular Activity Feed - In Chrome Extensions",
+  "version": "1.1",
+  "description": "To debug and run Angular Angular Activity Feed without a server",
+  
+  "app": {
+    "launch": {
+      "local_path": "client/index.html"
+    }
+  },
+  "offline_enabled": true,
+  "permissions": [
+    "unlimitedStorage",
+    "https://corpusdev.lingsync.org/",
+    "https://widgets.twimg.com/"
+  ],
+   "icons": { 
+  },
+   "manifest_version" : 2,
+  "content_security_policy" : "default-src 'self'  https://secure.gravatar.com https://themes.googleusercontent.com https://corpus.lingsync.org https://localhost:6984 https://corpusdev.lingsync.org  https://widgets.twimg.com"
+}
